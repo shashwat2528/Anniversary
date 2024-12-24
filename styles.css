@@ -49,6 +49,7 @@ p {
     height: 100%;
     padding-top: 50px;
     overflow-y: auto; /* Make sure the page is scrollable */
+    padding-bottom: 100px; /* Ensure there's space for the last section */
 }
 
 .page {
@@ -70,10 +71,11 @@ footer {
 
 /* Apology Section and Buttons */
 #apology-section {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     color: white;
-    display: none;  /* Hidden initially */
+    display: block;  /* Visible by default */
+    margin-bottom: 100px; /* To ensure spacing at the bottom */
 }
 
 #forgiveness-buttons {
