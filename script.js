@@ -136,11 +136,11 @@ function animate() {
 
 animate();
 
-function forgiveMe() {
-    document.getElementById("love-message").style.display = "block";
-    document.getElementById("apology-section").style.display = "none";
-}
+// function forgiveMe() {
+//     document.getElementById("love-message").style.display = "block";
+//     document.getElementById("apology-section").style.display = "none";
+// }
 
-function dontForgive() {
-    alert("I understand. I’ll work hard to earn your forgiveness.");
-}
+// function dontForgive() {
+//     alert("I understand. I’ll work hard to earn your forgiveness.");
+// }
