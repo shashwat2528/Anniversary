@@ -166,3 +166,13 @@ function animate() {
 
 // Start the animation
 animate();
+
+// Handle forgiveness actions
+function forgiveMe() {
+    document.getElementById("love-message").style.display = "block";
+    document.getElementById("apology-section").style.display = "none";
+}
+
+function dontForgive() {
+    alert("I understand. I’ll work hard to earn your forgiveness.");
+}
