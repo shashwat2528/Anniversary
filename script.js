@@ -48,7 +48,6 @@ class Particle {
         this.x = x;
         this.y = y;
         this.color = color;
-        // Increased initial velocity for faster movement of particles
         this.velocity = {
             x: (Math.random() - 0.5) * 12, // Faster horizontal movement
             y: (Math.random() - 0.5) * 12  // Faster vertical movement
@@ -82,7 +81,6 @@ class Firework {
         this.x = x;
         this.y = y;
         this.color = color;
-        // Increased initial upward velocity for faster ascent
         this.velocity = {x: 0, y: Math.random() * -3 - 1};  // Faster upward movement
         this.particles = []; // Particles for explosion
         this.lifespan = 120; // Shortened lifespan for quicker explosion
