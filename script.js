@@ -142,5 +142,5 @@ function forgiveMe() {
 }
 
 function dontForgive() {
-    alert("I understand. I’ll work hard to earn your forgiveness.");
+    alert("Sorry But You Chose The Wrong Option Please Reconsider It As Your Beba Loves You The Most.");
 }
