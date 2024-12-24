@@ -66,3 +66,39 @@ footer {
     font-size: 1.2em;
     color: #e74c3c;
 }
+
+/* Apology Section and Buttons */
+#apology-section {
+    display: none;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+#forgiveness-buttons {
+    margin-top: 20px;
+}
+
+#forgiveness-buttons button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#forgiveness-buttons button:hover {
+    background-color: #ff1493;
+}
+
+/* Style for the Love Message */
+#love-message {
+    display: none;
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    margin-top: 50px;
+}
