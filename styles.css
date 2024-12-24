@@ -4,7 +4,9 @@ canvas {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10; /* Keep fireworks in the background */
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keep fireworks in the background */
 }
 
 /* Basic page styling */
@@ -14,26 +16,22 @@ body {
     overflow-x: hidden;
     background-color: #1e1e1e;
     color: white;
-    height: 100%;
 }
 
 h1 {
     text-align: center;
     font-size: 3em;
     color: #f39c12;
-    margin-top: 50px;
 }
 
 p {
     text-align: center;
     font-size: 1.3em;
     color: #f1c40f;
-    margin-top: 20px;
 }
 
 .photo {
     text-align: center;
-    margin-top: 30px;
 }
 
 .photo img {
@@ -45,11 +43,8 @@ p {
 
 /* Scrollable Pages */
 .content {
-    width: 100%;
-    height: 100%;
-    padding-top: 50px;
-    overflow-y: auto; /* Make sure the page is scrollable */
-    padding-bottom: 100px; /* Ensure there's space for the last section */
+    z-index: 10;
+    position: relative;
 }
 
 .page {
@@ -59,7 +54,6 @@ p {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    transition: all 0.5s ease;
 }
 
 footer {
@@ -71,11 +65,8 @@ footer {
 
 /* Apology Section and Buttons */
 #apology-section {
-    margin-top: 50px;
     text-align: center;
     color: white;
-    display: block;  /* Visible by default */
-    margin-bottom: 100px; /* To ensure spacing at the bottom */
 }
 
 #forgiveness-buttons {
@@ -103,5 +94,4 @@ footer {
     font-size: 50px;
     color: red;
     text-align: center;
-    margin-top: 50px;
 }
