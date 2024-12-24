@@ -4,7 +4,7 @@ canvas {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1; /* Keep fireworks in the background */
+    z-index: 10; /* Keep fireworks in the background */
 }
 
 /* Basic page styling */
