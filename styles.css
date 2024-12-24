@@ -1,31 +1,30 @@
-body {
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #0c0c0c;
-    color: white;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Arial', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
+    background-color: #1e1e1e;
+    color: white;
+    height: 100%;
 }
 
 h1 {
     text-align: center;
     font-size: 3em;
-    margin-top: 150px;
     color: #f39c12;
+    margin-top: 50px;
 }
 
 p {
     text-align: center;
-    font-size: 1.2em;
-    margin-top: 20px;
+    font-size: 1.3em;
     color: #f1c40f;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 1.5em;
-    color: #e74c3c;
+    margin-top: 20px;
 }
 
 .photo {
@@ -34,16 +33,48 @@ p {
 }
 
 .photo img {
-    width: 50%;
+    width: 60%;
+    max-width: 500px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Fireworks Background */
 .fireworks {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Ensure fireworks stay in the background */
+    z-index: -1;
+}
+
+/* Scrollable Pages */
+.content {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+/* Special Style for the Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
 }
