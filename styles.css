@@ -1,11 +1,15 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Set canvas to display as a block element to fill the screen */
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Keep fireworks in the background */
 }
 
+/* Basic page styling */
 body {
+    margin: 0;
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
     background-color: #1e1e1e;
@@ -39,16 +43,6 @@ p {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Fireworks Background */
-.fireworks {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
 /* Scrollable Pages */
 .content {
     width: 100%;
@@ -66,15 +60,9 @@ p {
     transition: all 0.5s ease;
 }
 
-/* Special Style for the Footer */
 footer {
     text-align: center;
     padding: 30px 0;
     font-size: 1.2em;
     color: #e74c3c;
-}
-
-footer a {
-    color: #f39c12;
-    text-decoration: none;
 }
